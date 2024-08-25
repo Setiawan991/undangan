@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover-custom-navbar:hover {
+  transition: 0.3s ease-in-out;
+  font-size: medium;
+}
