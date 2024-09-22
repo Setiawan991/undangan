@@ -3,14 +3,16 @@ import { useEffect } from "react";
 
 const ImageSlider = () => {
   useEffect(() => {
-    const slides = document.querySelectorAll(".slide");
-    const nextButton = document.querySelector("#next");
-    const prevButton = document.querySelector("#prev");
+    const slides = document.querySelectorAll<HTMLDivElement>(".slide");
+    const nextButton = document.querySelector<HTMLButtonElement>("#next");
+    const prevButton = document.querySelector<HTMLButtonElement>("#prev");
     let currentIndex = 0;
 
-    const showSlide = (index) => {
+    const showSlide = (index: number) => {
       slides.forEach((slide, i) => {
-        slide.style.display = i === index ? "block" : "none";
+        if (slide) {
+          slide.style.display = i === index ? "block" : "none";
+        }
       });
     };
 
@@ -24,16 +26,22 @@ const ImageSlider = () => {
       showSlide(currentIndex);
     };
 
-    nextButton.addEventListener("click", nextSlide);
-    prevButton.addEventListener("click", prevSlide);
+    if (nextButton) {
+      nextButton.addEventListener("click", nextSlide);
+    }
+    if (prevButton) {
+      prevButton.addEventListener("click", prevSlide);
+    }
 
-    // Auto slide
     const autoSlide = setInterval(nextSlide, 3000);
 
-    // Cleanup
     return () => {
-      nextButton.removeEventListener("click", nextSlide);
-      prevButton.removeEventListener("click", prevSlide);
+      if (nextButton) {
+        nextButton.removeEventListener("click", nextSlide);
+      }
+      if (prevButton) {
+        prevButton.removeEventListener("click", prevSlide);
+      }
       clearInterval(autoSlide);
     };
   }, []);
