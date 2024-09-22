@@ -41,11 +41,11 @@ const Info = () => {
               transition={{ type: "spring", stiffness: 30 }}
               className="py-14 text-sm md:text-lg text-black"
             >
-              "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+              Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
               pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
               cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di
               antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian
-              itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir." QS.
+              itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir. QS.
               Ar-rum (21)
             </motion.p>
           </motion.div>
