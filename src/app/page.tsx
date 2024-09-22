@@ -22,7 +22,8 @@ const Home = () => {
       <Content />
       <WeddingEvent />
       <Galery />
-      <Give />
+
+      <div></div>
     </div>
   );
 };
