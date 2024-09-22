@@ -30,9 +30,8 @@ const Info = () => {
             transition={{ type: "spring", stiffness: 30 }}
             className="shadow-xl shadow-slate-600 w-96 h-52 bg-cover  bg-no-repeat bg-center rounded-xl md:w-full md:h-80"
             style={{
-              backgroundImage:
-                "url('/4.jpg')",
-                backgroundPosition:"center 20%"
+              backgroundImage: "url('/4.jpg')",
+              backgroundPosition: "center 20%",
             }}
           ></motion.div>
           <motion.div>
@@ -47,7 +46,7 @@ const Info = () => {
               cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di
               antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian
               itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir." QS.
-              ar-rum (21)
+              Ar-rum (21)
             </motion.p>
           </motion.div>
         </div>
