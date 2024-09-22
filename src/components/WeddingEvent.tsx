@@ -1,13 +1,7 @@
 "use client";
 import { FlowerLotus, FlowerTulip, SketchLogo } from "@phosphor-icons/react";
 import React, { useEffect, useRef, useState } from "react";
-import {
-  AnimatePresence,
-  motion,
-  useInView,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
 
 const WeddingEvent = () => {
   const refcontainer = useRef(null);
